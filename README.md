@@ -7,14 +7,21 @@ Future functionality will include LLM summarization, LLM "talking to the documen
 ## Requirements
 Python 3.10
 GPU with at least 6GB VRAM (some customizability here)
+Ollama 0.1.12
 
-## Installing dependencies for Python
-`pip install -r requirements.txt`
+## Preparation
+1. Install all necessary python libraries using the below command:
+    
+    `pip install -r requirements.txt`
+2. Create the Ollama model from the Modelfile like so:
 
-## Running Script
+    `ollama create llama-summarizer`
+
+3. Ensure Ollama is running and ready to use.
+
+## Running the Script
 1. Add mp4 video to folder called 'mp4files'.
-2. Create folders called 'mp3files' and 'transcripts'
-3. Run the main.py script: 
+2. Run the main.py script: 
     
     `python main.py`
-4. After the process runs (one video takes ~ 5 minutes), a transcript should be produced.
+3. After the process runs (one video takes ~ 5 minutes), a transcript should be produced.
